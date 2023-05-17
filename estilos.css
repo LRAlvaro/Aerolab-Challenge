@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+button{
+    width: 202px;
+    height: 27px;
+    top: 26.5px;
+    left: 40px;
+    background: linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%);
+
+}
+
