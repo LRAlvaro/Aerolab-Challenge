@@ -92,3 +92,20 @@ button{
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
     border-radius: 104px;
 }
+
+.walkthrough_section {
+    position: absolute;
+    height: 721px;
+    left: 0px;
+    right: 0px;
+    top: 952px;
+
+}
+
+.product section{
+    position: absolute;
+    height: 2598px;
+    left: 0px;
+    right: 0px;
+    top: 1833px;
+}
