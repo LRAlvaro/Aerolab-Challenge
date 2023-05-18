@@ -1,16 +1,57 @@
-/*{
+/* Pagina completa */
+*{
     box-sizing: border-box;
+    margin: 0;
 }
-*/
+/*--------------------*/
 
-.landing_section {
+/* Header y Navegador */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 689px;
     position: absolute;
-    height: 920px;
-    left: 0px;
-    right: 0px;
+    height: 128px;
+    left: 228px;
+    right: 228px;
     top: 0px;
 
+    background: #FFFFFF;
 }
+
+.logo {
+    width: 130px;
+    height: 50px;
+   
+}
+
+
+nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 689px;
+    height: 128px;
+    left: 228px;
+    right: 228px;
+    top: 0px;
+}
+
+/*---------------------------------*/
+/* Seccion de Presentacion */
+
+.landing_section {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100vw;
+}
+
 .landing_copy {
     display: flex;
     flex-direction: column;
@@ -23,6 +64,17 @@
     left: 228px;
     top: 240px;
 }
+
+.label_title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 602px;
+    height: 355px;
+}
+
 .landing_copy h1{
     font-family: 'Montserrat';
     font-style: normal;
@@ -30,13 +82,25 @@
     font-size: 200px;
     line-height: 80%;
     text-transform: uppercase;
-    color: linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%),
-    linear-gradient(0deg, #252F3D, #252F3D);
+    background: linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%),
+    linear-gradient(0deg, #252F3D, #252F3D);*/
     width: 602px;
     height: 320px;
+    margin: 0px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  
 
 }
 
+.landing_copy span {
+    background: rgba(37, 47, 61, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
 .landing_copy h5{
     width: 174px;
     height: 27px;
@@ -61,51 +125,66 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-}
 
+ 
+}
 
 button{
-    width: 202px;
-    height: 27px;
-    top: 26.5px;
-    left: 40px;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 40px;
+    gap: 4px;
+    border-radius: 24px;
+    width: 318px;
+    height: 80px;
     background: linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%);
-
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
 }
 
+/*
 .illustration_container {
     position: absolute;
-    width: 897px;
-    height: 795px;
+    width: 100px;
+    height: 100px;
     right: 141px;
     top: 45px;
 
 }
 
 .background-img {
-    position: absolute;
-    width: 722px;
-    height: 600px;
-    left: 88px;
-    top: 195px;
+    
+    width: 100%;
+    height: 100%;
+
     background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
     border-radius: 104px;
 }
 
+/*
+
 .walkthrough_section {
-    position: absolute;
-    height: 721px;
-    left: 0px;
-    right: 0px;
-    top: 952px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100vw;
 
 }
 
 .product section{
-    position: absolute;
-    height: 2598px;
-    left: 0px;
-    right: 0px;
-    top: 1833px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100vw;
 }
+
+*/
