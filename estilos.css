@@ -113,7 +113,7 @@ nav {
 
 }
 
-.landing_copy p{
+p{
     width: 523px;
     height: 54px;
     font-family: 'Montserrat';  
@@ -189,6 +189,7 @@ button{
     left: 0px;
     right: 0px;
     top: 952px;
+    background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
 
 }
 
@@ -202,7 +203,17 @@ button{
     width: 532px;
     height: 676px;
     left: 0px;
-    top: 45.84px;
+    top: 45.84px;   
+    border: 1px solid #DAE4F2;
+    border-radius: 0px 0px 24px 24px;
+    transform: rotate(-3deg);
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .card2{
@@ -215,6 +226,10 @@ button{
     height: 676px;
     left: calc(50% - 532px/2 + 0.32px);
     top: 0px;
+    border: 1px solid #DAE4F2;
+/* Elevation 2/Default */
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
 }
 
 .card3 {
@@ -227,6 +242,12 @@ button{
     height: 676px;
     right: -0.38px;
     top: 18.54px;
+    
+    background: #FFFFFF;
+    border: 1px solid #DAE4F2;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+    transform: rotate(3deg);
 }
 
 .img-browse {
@@ -236,6 +257,8 @@ button{
     left: calc(50% - 508px/2);
     bottom: -26.59px;
     transform: rotate(-3deg);
+    background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
+    border-radius: 30px;
 }
 
 .img-choise {
@@ -244,17 +267,39 @@ button{
     height: 498px;
     left: calc(50% - 508px/2);
     bottom: 0px;
-
-
+    background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
+    border-radius: 30px;
 }
 
 .img-enjoy {
     width: 508px;
     height: 498px;
     transform: rotate(3deg);
+    background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
+    border-radius: 30px;
 }
 
-
+h3 {
+    width: 201px;
+    height: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+/* identical to box height, or 32px */
+    text-transform: uppercase;
+/* Brand/Default */
+    background: linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: rotate(-3deg);
+/* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
 
 
 
