@@ -4,7 +4,9 @@
     margin: 0;
 }
 /*--------------------*/
-
+body {
+    background-image: url(assets/illustrations/single-wave-pattern.svg);
+}
 /* Header y Navegador */
 
 header{
@@ -202,18 +204,16 @@ button{
     position: absolute;
     width: 532px;
     height: 676px;
-    left: 0px;
-    top: 45.84px;   
+    left: 200px;
+    top: 27.84px;   
     border: 1px solid #DAE4F2;
-    border-radius: 0px 0px 24px 24px;
+    border-radius: 32px;
     transform: rotate(-3deg);
-
-/* Inside auto layout */
-
+    background: #FFFFFF;
     flex: none;
     order: 1;
     align-self: stretch;
-    flex-grow: 0;
+    z-index: 1;
 }
 
 .card2{
@@ -227,9 +227,10 @@ button{
     left: calc(50% - 532px/2 + 0.32px);
     top: 0px;
     border: 1px solid #DAE4F2;
-/* Elevation 2/Default */
     box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.05);
     border-radius: 32px;
+    background: #FFFFFF;
+    z-index: 2;
 }
 
 .card3 {
@@ -240,29 +241,27 @@ button{
     position: absolute;
     width: 532px;
     height: 676px;
-    right: -0.38px;
+    right: -15px;
     top: 18.54px;
-    
+    margin-right: 250px;
     background: #FFFFFF;
     border: 1px solid #DAE4F2;
     box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.05);
     border-radius: 32px;
     transform: rotate(3deg);
+    z-index: 3;
 }
 
 .img-browse {
-    position: absolute;
     width: 508px;
     height: 498px;
     left: calc(50% - 508px/2);
     bottom: -26.59px;
-    transform: rotate(-3deg);
     background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
     border-radius: 30px;
 }
 
-.img-choise {
-    position: absolute;
+.img-choose {
     width: 508px;
     height: 498px;
     left: calc(50% - 508px/2);
@@ -274,7 +273,7 @@ button{
 .img-enjoy {
     width: 508px;
     height: 498px;
-    transform: rotate(3deg);
+    transform: rotate(0deg);
     background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
     border-radius: 30px;
 }
@@ -284,7 +283,7 @@ h3 {
     height: 32px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 1000;
     font-size: 32px;
     line-height: 100%;
 /* identical to box height, or 32px */
@@ -294,13 +293,43 @@ h3 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    transform: rotate(-3deg);
 /* Inside auto layout */
     flex: none;
     order: 1;
     flex-grow: 0;
+    
 }
 
+.title-enjoy{
+    left: 30px;
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+.title-browse {
+    margin-top: 20px;
+}
+
+.title-choose {
+    margin-top: 20px;
+}
+
+.walkthrough_section p {
+    width: 372px;
+    height: 54px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+/* or 27px */
+
+
+/* Neutrals/600 */
+
+    color: #7C899C;
+}
 
 
 /*
@@ -311,3 +340,4 @@ h3 {
     width: 100vw;
 }
 
+transform: rotate(-1deg);
